@@ -61,7 +61,7 @@ class PrintRel(license.Data_company):
             self.c = canvas.Canvas("Orcamento.pdf");
             self.c.setFont("Helvetica-Bold", 24)
         try:
-            self.c.drawInlineImage("logoempresa.jpg", 150, 770, 300, 70)
+            self.c.drawInlineImage("hyo.png", 150, 770, 300, 70)
         except:
             self.c.drawString(220, 790, self.m_SeuLogo)
         self.c.setFont("Helvetica-Bold", 14)
@@ -245,7 +245,7 @@ class PrintRel(license.Data_company):
         self.c.drawString(30, 40, self.TelefoneEmp);
         self.c.drawString(30, 20, self.m_Tecnico + self.tecnico_R);
         self.c.setFont("Helvetica", 8)
-        self.c.drawString(280, 5, "GlacX - Oficinas - RfZorzi Sistemas - https://www.facebook.com/rfzorzi/")
+        self.c.drawString(280, 5, "GLACAC - Sedapal - Jhon Gesell - https://www.facebook.com/tecprogworld/")
         self.c.showPage()
         self.c.save()
         self.PrintOrc()
@@ -269,7 +269,7 @@ class PrintRel(license.Data_company):
                 #### MOLDURA E TITULOS DO RELATORIO
 
         try:
-            self.c.drawInlineImage("logoempresa.jpg", 150, 770, 300, 70)
+            self.c.drawInlineImage("hyo.png", 150, 770, 300, 70)
         except:
             self.c.drawString(220, 790, 'Seu Logo')
         self.c.setFont("Helvetica-Bold", 16);
@@ -372,7 +372,7 @@ class PrintRel(license.Data_company):
         # self.c.drawString(30, 30, cab7)
         self.c.drawString(30, 20, self.m_Tecnico +  self.tecnico_R  );
         self.c.setFont("Helvetica", 8)
-        self.c.drawString(280, 5, "GlacX - Oficinas - RfZorzi Sistemas - https://www.facebook.com/rfzorzi/")
+        self.c.drawString(280, 5, "GLACAC - Sedapal - Jhon Gesell - https://www.facebook.com/tecprogworld/")
         self.c.showPage()
         self.c.save()
         self.PrintVist()
